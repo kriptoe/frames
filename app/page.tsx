@@ -25,11 +25,11 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
+  title: 'Hypersolid',
   description: 'Hypersolid',
   openGraph: {
     title: 'Hypersolid',
-    description: 'LFG',
+    description: 'Degen Lottery',
     images: [`${NEXT_PUBLIC_URL}/Elisa.png`],
   },
   other: {
