@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   title: 'zizzamia.xyz',
   description: 'Hypersolid',
   openGraph: {
-    title: 'zizzamia.xyz',
+    title: 'Hypersolid',
     description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
+    images: [`${NEXT_PUBLIC_URL}/Elisa.png`],
   },
   other: {
     ...frameMetadata,
