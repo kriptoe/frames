@@ -10,12 +10,9 @@ const frameMetadata = getFrameMetadata({
       target: 'https://www.google.com',
     },
     {
-      action: 'ethereumTransaction',
-      label: 'Send ETH',
-      ethereum: {
-        to: '0xYOUR_RECIPIENT_ADDRESS',
-        value: '1000000000000000000', // 1 ETH in wei
-      },
+      action: 'tx',
+      label: 'Click the Button',
+      target: `${NEXT_PUBLIC_URL}/api/buttonclicker`,
     },
   ],
   image: {
