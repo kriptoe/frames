@@ -5,29 +5,32 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      action: 'link',
-      label: 'Link to Google',
-      target: 'https://www.google.com',
+      label: 'Story time',
     },
     {
       action: 'tx',
-      label: 'Click the Button',
-      target: `${NEXT_PUBLIC_URL}/api/buttonclicker`,
+      label: 'Send Base Sepolia',
+      target: `${NEXT_PUBLIC_URL}/api/tx`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
     },
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/Elisa.jpg`,
+    src: `${NEXT_PUBLIC_URL}/park-3.png`,
     aspectRatio: '1:1',
   },
+  input: {
+    text: 'Tell me a story',
+  },
+  postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
 
 export const metadata: Metadata = {
-  title: 'Frame Test',
+  title: 'zizzamia.xyz',
   description: 'LFG',
   openGraph: {
-    title: 'Frame Test',
+    title: 'zizzamia.xyz',
     description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/Elisa.jpg`],
+    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
   },
   other: {
     ...frameMetadata,
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Hypersolid</h1>
+      <h1>zizzamia.xyz</h1>
     </>
   );
 }
