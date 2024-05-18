@@ -9,6 +9,14 @@ const frameMetadata = getFrameMetadata({
       label: 'Link to Google',
       target: 'https://www.google.com',
     },
+    {
+      action: 'ethereumTransaction',
+      label: 'Send ETH',
+      ethereum: {
+        to: '0xYOUR_RECIPIENT_ADDRESS',
+        value: '1000000000000000000', // 1 ETH in wei
+      },
+    },
   ],
   image: {
     src: `${NEXT_PUBLIC_URL}/Elisa.jpg`,
