@@ -21,7 +21,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse | Response> {
   });
 
   const txData: FrameTransactionResponse = {
-    chainId: `eip155:${baseSepolia.id}`, // Remember Base Sepolia might not work on Warpcast yet
+    chainId: `eip155:${arbitrum.id}`, // Remember Base Sepolia might not work on Warpcast yet
     method: 'eth_sendTransaction',
     params: {
       abi: [],
